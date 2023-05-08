@@ -1,0 +1,148 @@
+@font-face {
+    font-family: FigTree;
+    src: url(assets\fonts\Figtree\static\Figtree-Medium.ttf);
+}
+
+header {
+    background-color: #ffffff;
+    color: #9e9c9c;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000000;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #252525;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-family: FigTree;
+    padding-right: 25px;
+  }
+
+body {
+    background-color: #262626;
+    background-position: 0px 0px;
+    background-image: linear-gradient(to bottom, 
+    #dfdfdf 0px,     /* start of solid gray area */
+    #dfdfdf 70%,   /* end of solid gray area, start of bottom gradient */
+    #777777 100%     /* end of gradient */
+); 
+    background-position: 0% 0%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+/* Removes purple and underlines on links */
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:active { text-decoration: none; }
+
+
+/* Name, circlular picture */
+.centered-info {
+    /* Centers */
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -350px;
+
+    width: 700px;
+    height: 700px;
+}
+
+/* Covers image */
+.face-image{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+
+    background: green;
+    float: left;
+  }
+
+/* Image which covers the circle created in .face-image */
+.face-image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+
+.name {
+    font-family: FigTree;
+    color: black;
+    margin: 0;
+    padding: 10px;
+    font-size: 2.5em;
+
+    float: left;
+}
+
+.info-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+.logo-button {
+    background-color: transparent;
+    display: inline-block;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 0;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  
+.logo-button img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.logo-button:hover img {
+    transform: scale(1.1);
+  }
+
+.resume-button {
+    width: 7em;
+    height: 2.5em;
+    border-radius: 10px; /* adjust the value to control the degree of rounding */
+    background-color: #5e56ec;
+    border: none;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+.name-and-buttons {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    top: 100px;
+    float: right;
+}
