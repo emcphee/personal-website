@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {%  block head %}
-    <link rel="icon" type="image/x-icon" href="assets/images/site-preview.png">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('assets', filename='images/site-preview.png') }}">
     <title>Ethan McPhee</title>
 {% endblock %}
 
@@ -18,7 +18,7 @@
 {%  block body %}
 <div class="centered-info">
     <span class="face-image">
-        <img src="assets\images\faceimage.jpg"/>
+        <img src="{{ url_for('assets', filename='images/faceimage.jpg') }}"/>
     </span>
 
     <div class="name-and-buttons">
@@ -29,13 +29,13 @@
         <div class="info-buttons">
             <a href="https://github.com/emcphee" target="_blank">
                 <button class="logo-button" id="github-button">
-                    <img src="assets\images\github-logo.png" alt="Github Logo">
+                    <img src="{{ url_for('assets', filename='images/github-logo.png') }}" alt="Github Logo">
                 </button>
             </a>
 
             <a href="https://www.linkedin.com/in/ethan-mcphee-075a84166/" target="_blank">
                 <button class="logo-button" id="linkedin-button">
-                    <img src="assets\images\linkedin-logo.png" alt="LinkedIn Logo">
+                    <img src="{{ url_for('assets', filename='images/linkedin-logo.png') }}" alt="LinkedIn Logo">
                 </button>
             </a>
 
