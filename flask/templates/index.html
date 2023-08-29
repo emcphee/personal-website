@@ -1,55 +1,51 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base.html' %}
 
+{%  block head %}
     <link rel="icon" type="image/x-icon" href="assets/images/site-preview.png">
     <title>Ethan McPhee</title>
+{% endblock %}
 
-</head>
-<header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-<body>
-    <div class="centered-info">
-        <span class="face-image">
-            <img src="assets\images\faceimage.jpg"/>
-        </span>
+{%  block header %}
+<nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+{% endblock %}
 
-        <div class="name-and-buttons">
-            <div class="name">
-                Ethan McPhee
-            </div>
-    
-            <div class="info-buttons">
-                <a href="https://github.com/emcphee" target="_blank">
-                    <button class="logo-button" id="github-button">
-                        <img src="assets\images\github-logo.png" alt="Github Logo">
-                    </button>
-                </a>
-    
-                <a href="https://www.linkedin.com/in/ethan-mcphee-075a84166/" target="_blank">
-                    <button class="logo-button" id="linkedin-button">
-                        <img src="assets\images\linkedin-logo.png" alt="LinkedIn Logo">
-                    </button>
-                </a>
-    
-                <a href="resume.pdf" target="_blank">
-                    <button class="resume-button">
-                        Resume
-                    </button>
-                </a>
-            </div>
+{%  block body %}
+<div class="centered-info">
+    <span class="face-image">
+        <img src="assets\images\faceimage.jpg"/>
+    </span>
+
+    <div class="name-and-buttons">
+        <div class="name">
+            Ethan McPhee
         </div>
 
+        <div class="info-buttons">
+            <a href="https://github.com/emcphee" target="_blank">
+                <button class="logo-button" id="github-button">
+                    <img src="assets\images\github-logo.png" alt="Github Logo">
+                </button>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ethan-mcphee-075a84166/" target="_blank">
+                <button class="logo-button" id="linkedin-button">
+                    <img src="assets\images\linkedin-logo.png" alt="LinkedIn Logo">
+                </button>
+            </a>
+
+            <a href="resume.pdf" target="_blank">
+                <button class="resume-button">
+                    Resume
+                </button>
+            </a>
+        </div>
     </div>
-</body>
-</html>
+
+</div>
+{% endblock %}
